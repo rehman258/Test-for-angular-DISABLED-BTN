@@ -1,0 +1,89 @@
+<html >
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+
+	<script src="stylejs.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body ng-app="myapp">
+     
+
+      <div ng-controller="mycont" style="color:red;">
+        <form name="myform" novalidate="novalidate">
+             
+             <div> 
+              <input type="text" name="username" ng-model="username" required="" />
+              <span ng-show="myform.username.$dirty && myform.username.$invalid">
+                <span ng-show="myform.$error.required">avnkjfsjk</span>
+              </span>
+             </div>
+
+
+             <div> 
+              <input type="email" name="useremail" ng-model="useremail" required="" />
+              <span ng-show="myform.useremail.$dirty && myform.useremail.$invalid">
+                <span ng-show="myform.$error.required">avnkjfsjk</span>
+                <span ng-show="myform.$error.email"></span>
+              </span>
+             </div>
+             <input type="submit" ng-disabled="myform.username.$dirty && myform.username.$invalid || myform.useremail.$dirty && myform.useremail.$invalid">  
+        </form>
+      </div>
+ 
+
+
+       
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<script src="stylejs.js"></script>
+</body>
+</html>
